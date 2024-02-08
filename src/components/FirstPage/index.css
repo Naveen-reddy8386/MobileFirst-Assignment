@@ -1,0 +1,69 @@
+.container {
+  background-color: black;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding: 30px;
+}
+
+.rocket {
+  color: aliceblue;
+}
+.users {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 228px;
+  height: 40px;
+  top: 173px;
+  left: 569px;
+  padding: 7px, 32px, 8px, 15px;
+  border-radius: 1000px;
+  border: 1px #292929;
+  background-color: #1f1e1d;
+}
+.indian {
+  color: aliceblue;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+.main_con {
+  color: white;
+  font-size: 50px;
+  width: 756px;
+  height: 118px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.welcome {
+  width: 535px;
+  height: 24px;
+  size: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: -10px;
+}
+.create_button {
+  width: 275px;
+  height: 48px;
+  background-color: #404040;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+.have_acc {
+  font-size: 14px;
+  color: white;
+}
+
+.arrow {
+  margin-left: 19px;
+}
+.have_acc span {
+  text-decoration: underline;
+}
