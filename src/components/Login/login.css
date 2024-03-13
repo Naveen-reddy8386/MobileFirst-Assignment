@@ -1,0 +1,195 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://nasemul1.github.io/img_host/peakpx.jpg);
+  margin-top: 222;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.log_container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 320px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+h3 {
+  text-align: center;
+  color: rgb(246, 245, 244);
+  font-family: fantasy;
+  font-size: 35px;
+  font-weight: 100;
+}
+.input {
+  padding: 10px;
+  margin: 5px 10px;
+  border: 2px solid white;
+  border-radius: 25px;
+  background-color: transparent;
+  width: 200px;
+  font-weight: 600;
+  color: white;
+}
+::placeholder {
+  font-weight: 600;
+  color: white;
+  opacity: 1;
+}
+
+form button {
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: cornflowerblue;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.contact-head {
+  color: white;
+  font-size: 40px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn-12 {
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn-12 span {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(
+    0deg,
+    rgb(10, 212, 155) 0%,
+    rgb(11, 178, 109) 100%
+  );
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-12 span:nth-child(1) {
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+.icon {
+  height: 20px;
+  width: 30px;
+  margin-bottom: 0;
+  color: #023b6d;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(5);
+  }
+  25% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.arrow {
+  animation: shake 1s infinite;
+  height: 20px;
+  width: 30px;
+  color: #023b6d;
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+.details {
+  margin-bottom: 500px;
+  border: 1px solid #ffffff;
+  padding: 5px;
+  border-radius: 3px;
+  color: rgb(92, 97, 95);
+  font-size: 14px;
+  font-family: monospace;
+}
